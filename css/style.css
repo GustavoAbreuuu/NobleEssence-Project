@@ -1,0 +1,50 @@
+:root {
+    --white-color: #f0f0f0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 2rem;
+    color: var(--white-color);
+}
+
+h1 {
+    font-size: 3.6rem;
+    margin: 1.7em 0;
+}
+
+h2 {
+    font-size: 2.7rem;
+}
+
+h3 {
+    font-size: 2.3rem;
+}
+
+p {
+    font-size: 1.6rem;
+    line-height: 1.6;
+    margin-bottom: 1.6rem;
+}
+
+img {
+    max-width: 100%;
+    border-style: none;
+}
