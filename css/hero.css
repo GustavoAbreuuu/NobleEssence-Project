@@ -1,0 +1,46 @@
+.hero {
+    height: 80vh;
+    padding: 4rem 2rem;
+    text-decoration: center;
+    background: linear-gradient(45deg, white 50%, transparent 50%) left calc(50% + 20px) bottom no-repeat, linear-gradient(-45deg, white 50%, transparent 50%) left calc(50% - 20px) bottom no-repeat, url(../imgs/background-hero.jpg);
+    background-size: 40px 40px, 40px 40px, cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}    
+
+.hero-title {
+    background-color: #242a2c;
+    color: var(--white-color);
+    font-size: 2.6rem;
+    font-weight: 400;
+    padding: 3rem 2rem;
+}
+
+.hero-text {
+    background-color: #242a2c;
+    margin: 0.5rem 3rem 3.5rem;
+    color: var(--white-color);
+    padding: 2rem;
+    font-size: 1.8rem;
+    font-style: oblique;
+}
+
+.hero-btn {
+    border: 0.1rem solid rgba(255, 255, 255, .3);
+    background-color: rgba(0, 0, 0, .2);
+    border-radius: 0.5rem;
+    padding: 1.5rem 2.5rem;
+    display: inline-block;
+    color: var(--white-color);
+    text-decoration: none;
+    font-size: 1.6rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: .5s;
+}
+
+.hero-btn:hover {
+    background-color: #81D4FA;
+}
