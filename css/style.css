@@ -48,3 +48,11 @@ img {
     max-width: 100%;
     border-style: none;
 }
+
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 1.6rem;
+    padding-right: 1.6rem;
+    max-width: 130rem;
+}
