@@ -1,0 +1,89 @@
+header {
+    position: sticky;
+    background: linear-gradient(90deg, #3f7f93 0.000%, #428ca1 16.667%, #4899aa 33.333%, #4fa4ac 50.000%, #56aba7 66.667%, #5bad9c 83.333%, #5da98d 100.000%);
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #FFCCBC;
+    justify-content: space-between;
+}
+
+.heading-top-mobile {
+    display: flex;
+    align-items: center;
+    padding: 1em 2.5em;
+    padding-top: 2em;
+}
+
+.logo-text {
+     text-transform: uppercase;
+     font-size: 2.4rem;
+     margin: 0;
+     padding: 1rem 2rem;
+     display: block;
+     text-decoration: none;
+     font-weight: bold;
+     color: #12FFEB;    
+     float: left;
+     transition: 0.2s;
+}
+
+.logo-text:hover {
+    text-shadow: 0 0 10px #23DECC;
+}
+
+.header-nav ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin-top: 2rem;
+}
+
+.header-nav li {
+    display: flex;
+}
+
+.header-nav a {
+    display: flex;
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: var(--white-color);
+    padding-right: 4rem;
+    transition: 0.2s;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.header-nav a:hover {
+    text-shadow: 0 0 10px var(--white-color);
+}
+
+#open-sidebar-button {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+#close-sidebar-button {
+    display: none;
+    background: none;
+    border: none;
+    padding: 0.5em;
+    cursor: pointer;
+    color: var(--white-color);
+    z-index: 100;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#overlay {
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    inset: 0;
+    z-index: 9;
+    display: none;
+}
