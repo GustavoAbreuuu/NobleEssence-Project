@@ -1,0 +1,24 @@
+.gallery-title {
+    background-color: #63c6ae;
+    padding: 0.5rem 0;
+}
+
+.gallery-title h2 {
+    font-size: 2.4rem;
+    color: var(--white-color);
+    text-transform: uppercase;
+    font-weight: 400;
+    padding-top: 2rem;
+}
+
+.gallery-photos {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
+    grid-template-rows: auto;
+    grid-gap: 0;
+}
+
+.gallery-photos img {
+    display: block;
+    width: 100%;
+}

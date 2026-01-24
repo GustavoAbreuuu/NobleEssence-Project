@@ -2,7 +2,7 @@
     height: 80vh;
     padding: 4rem 2rem;
     text-decoration: center;
-    background: linear-gradient(45deg, white 50%, transparent 50%) left calc(50% + 20px) bottom no-repeat, linear-gradient(-45deg, white 50%, transparent 50%) left calc(50% - 20px) bottom no-repeat, url(../imgs/background-hero.jpg);
+    background: linear-gradient(45deg, white 50%, transparent 50%) left calc(50% + 20px) bottom no-repeat, linear-gradient(-45deg, white 50%, transparent 50%) left calc(50% - 20px) bottom no-repeat, url();
     background-size: 40px 40px, 40px 40px, cover;
     display: flex;
     flex-direction: column;
