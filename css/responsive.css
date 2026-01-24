@@ -91,4 +91,8 @@
         margin-bottom: 0.5em;
         margin-right: 4rem;
     }
+
+    .gallery-photos {
+        grid-template-columns: repeat(6, 1fr);
+    }
 }

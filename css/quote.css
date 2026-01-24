@@ -1,0 +1,65 @@
+.quote-container {
+    background-color: #63c6ae;
+    padding: 5rem 0;
+    border-bottom: 1.2rem solid #48b9a1;
+}
+
+.quote-slideshow h2{
+    color: white;
+    font-size: 3rem;
+    font-style: italic;
+    font-weight: normal;
+    padding: 2rem;
+}
+
+.quote-slideshow figcaption {
+    color: var(--white-color);
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+.quote-slideshow {
+    position: relative;
+    max-width: 95rem;
+    margin: 0 auto;
+    padding: 0 8rem;
+}
+
+.quote-slideshow figure {
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: opacity 1s;
+    margin: 0;
+    z-index: 1;
+}
+
+.quote-slideshow figure.show {
+    position: relative;
+    opacity: 1;
+    z-index: 2;
+}
+
+.quote-slideshow figure + figure {
+    margin-top: 0;
+}
+
+.quote-slideshow .prev,
+.quote-slideshow .next {
+    z-index: 3;
+    position: absolute;
+    top: 50%;
+    cursor: pointer;
+    color: var(--white-color);
+    transform: translateY(-50%);
+}
+
+.quote-slideshow .prev {
+    left: 1rem;
+}
+
+.quote-slideshow .next {
+    right: 1rem;
+}

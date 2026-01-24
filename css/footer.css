@@ -1,0 +1,28 @@
+footer {
+    background-color: #242a2c;
+    padding: 5rem 0 10rem;
+    color: var(--white-color);
+}
+
+.footer h3 {
+    color: #12FFEB;
+}
+
+.footer p {
+    font-size: 1.7rem;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 0.9rem;
+    font-size: 1.7rem;
+    color: #FD4830;
+    margin-top: 3.5rem;
+    font-weight: 600;
+}
+
+.footer-links li{
+    list-style: none;
+}
