@@ -1,7 +1,7 @@
 .content .container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 3rem;
+    grid-gap: 4rem;
     padding-bottom: 8rem;
 }
 
@@ -11,15 +11,21 @@
 }
 
 .content h3 {
-    color: #737c85;
+    /* color: #737c85; */
+    color: #607D8B;
     font-size: 2.1rem;
     padding-top: 4rem;
     font-weight: 400;
 }
 
 .content p {
-    color: #929da5;
+    /* color: #929da5; */
+    color: #424242;
     font-size: 1.6rem;
     word-spacing: 0.3rem;
+}
+
+.content .container article:first-of-type {
+    margin-top: 0.8rem;
 }
 
