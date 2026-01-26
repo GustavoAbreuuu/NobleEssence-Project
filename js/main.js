@@ -13,3 +13,24 @@
         btnNext: '.next'
     })
 })()
+
+document.addEventListener("DOMContentLoaded", function() {
+    const sections = document.querySelectorAll('.section-reveal');
+
+    const observerOptions = {
+        root: null,
+        threshold: 0.15
+    };
+
+    const sectionObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('active');
+            }
+        });
+    }, observerOptions);
+
+    sections.forEach(section => {
+        sectionObserver.observe(section);
+    });
+});

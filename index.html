@@ -29,8 +29,8 @@
 <body>
     <header>
         <div class="heading-top-mobile">
-            <a href="index.html" class="logo-text">Noble Essence</a>
-            <button id="open-sidebar-button" onclick="openSidebar()">
+            <a href="index.html" class="logo-text" aria-label="Back to Home">Noble Essence</a>
+            <button id="open-sidebar-button" onclick="openSidebar()" aria-label="open sidebar button" aria-expanded="false" aria-controls="navbar">
                 <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
                     fill="#FFFFFF">
                     <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
@@ -41,7 +41,7 @@
         <nav id="navbar" class="header-nav">
             <ul>
                 <li>
-                    <button id="close-sidebar-button" onclick="closeSidebar()">
+                    <button id="close-sidebar-button" onclick="closeSidebar()" aria-label="close sidebar button" aria-expanded="false" aria-controls="navbar">
                         <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
                             fill="#FFFFFF">
                             <path
@@ -49,12 +49,12 @@
                         </svg>
                     </button>
                 </li>
-                <li><a href="#">Avaliações</a></li>
-                <li><a href="#">Sobre Nós</a></li>
-                <li><a href="#">Galeria</a></li>
-                <li><a href="#">Contato</a></li>
+                <li><a href="#avaliacoes">Avaliações</a></li>
+                <li><a href="#sobre-nos">Sobre Nós</a></li>
+                <li><a href="#galeria">Galeria</a></li>
+                <li><a href="#contato">Contato</a></li>
             </ul>
-            <div id="overlay" onclick="closeSidebar()"></div>
+            <div id="overlay" onclick="closeSidebar()" aria-hidden="true"></div>
         </nav>
     </header>
     <main>
@@ -65,7 +65,7 @@
         </section>
 
         <div class="container">
-            <section class="people-cards">
+            <section class="people-cards section-reveal" id="avaliacoes">
                 <article class="people-cards-card">
                     <img src="imgs/Cards/1.png" alt="Carousel Img" class="people-card-image">
                     <div class="people-cards-avatar">
@@ -116,7 +116,7 @@
             </section>
         </div>
 
-        <section class="content">
+        <section class="content section-reveal" id="sobre-nos">
             <div class="container">
                 <article>
                     <h3>A Arte de Eternizar Momentos</h3>
@@ -131,10 +131,10 @@
             </div>
         </section>
 
-        <section class="gallery">
-            <div class="gallery-title">
+        <section class="gallery section-reveal" id="galeria">
+            <div class="gallery-title" aria-labelledby="titulo-galeria">
                 <div class="container">
-                    <h2>Galeria</h2>
+                    <h2 id="titulo-galeria">Galeria</h2>
                 </div>
             </div>
 
@@ -177,13 +177,13 @@
                     <h2>"Em um mundo onde tudo parece igual, encontrar uma assinatura olfativa tão autêntica e sofisticada foi uma revelação. Não é apenas um perfume, é uma obra de arte líquida."</h2>
                     <figcaption>Helena M., Cliente VIP.</figcaption>
                 </figure>
-                <span class="prev"><i class="fas fa-angle-left fa-2x"></i></span>
-                <span class="next"><i class="fas fa-angle-right fa-2x"></i></span>
+                <span class="prev"><i class="fas fa-angle-left fa-2x" aria-controls="slider"></i></span>
+                <span class="next"><i class="fas fa-angle-right fa-2x" aria-controls="slider"></i></span>
             </div>
         </section>
     </main>
 
-    <footer class="footer">
+    <footer class="footer section-reveal" id="contato">
         <div class="container">
             <h3>Fale Conosco</h3>
             <p>Estamos aqui para ajudar você a encontrar sua assinatura olfativa. Entre em contato para dúvidas sobre nossos produtos, parcerias ou para agendar uma consultoria exclusiva em nosso showroom.</p>
