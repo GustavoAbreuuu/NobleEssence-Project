@@ -22,7 +22,13 @@ function Carousel(config) {
         Array.prototype.forEach.call(_show, function(sh){
             sh.classList.remove('show')
         })
+        
+        Array.prototype.forEach.call(_this.itens, function(item){
+            item.setAttribute('aria-hidden', 'true')
+        })
         _this.itens[0].classList.add('show')
+        _this.itens[0].removeAttribute('aria-hidden') // ou setAttribute('aria-hidden', 'false')
+
         _this.btnNext.removeAttribute('style')
         _this.btnPrev.removeAttribute('style')
 
@@ -48,9 +54,13 @@ function Carousel(config) {
         let qtd = _this.itens.length;
         let slide = _currentSlide % qtd;
         slide = Math.abs(slide);
+        let currentSlide = _this.container.querySelector('.show');
 
-        _this.container.querySelector('.show').classList.remove('show')
-        _this.itens[slide].classList.add('show')
+        if(currentSlide){
+            currentSlide.classList.remove('show');
+            currentSlide.setAttribute('aria-hidden', 'true');
+        }
+        _this.itens[slide].classList.add('show');
+        _this.itens[slide].removeAttribute('aria-hidden'); // ou setAttribute('aria-hidden', 'false')
     }
-
 }
